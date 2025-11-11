@@ -9,9 +9,9 @@ export default class Cl_vEquipos extends Cl_vGeneral {
         this.btAgregar = this.crearHTMLButtonElement("btAgregar", {
             onclick: () => this.agregarContacto(),
         });
-        this.divContactosRegistrados = this.crearHTMLElement("divRegistrados", {
+        this.divContactosRegistrados = this.crearHTMLElement("divContactosRegistrados", {
             type: tHTMLElement.CONTAINER,
-            refresh: () => { },
+            refresh: () => this.actualizarContactosRegistrados(),
         });
     }
     get nombre() {

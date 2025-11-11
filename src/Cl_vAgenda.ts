@@ -14,10 +14,13 @@ export default class Cl_vEquipos extends Cl_vGeneral {
     this.btAgregar = this.crearHTMLButtonElement("btAgregar", {
       onclick: () => this.agregarContacto(),
     });
-    this.divContactosRegistrados = this.crearHTMLElement("divRegistrados", {
-      type: tHTMLElement.CONTAINER,
-      refresh: () => {},
-    }) as HTMLDivElement;
+    this.divContactosRegistrados = this.crearHTMLElement(
+      "divContactosRegistrados",
+      {
+        type: tHTMLElement.CONTAINER,
+        refresh: () => this.actualizarContactosRegistrados(),
+      }
+    ) as HTMLDivElement;
   }
   get nombre() {
     return this.inNombre.value.trim();

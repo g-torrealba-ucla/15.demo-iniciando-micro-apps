@@ -1,4 +1,4 @@
-import Cl_dcytDb from "https://gtplus.net/forms2/dcytDb/api/Cl_dcytDb.php?v251101-2020";
+import Cl_dcytDb from "https://gtplus.net/forms2/dcytDb/api/Cl_dcytDb.php?v251110-2150";
 import Cl_mContacto from "./Cl_mContacto.js";
 export default class Cl_mAgenda {
     constructor() {
